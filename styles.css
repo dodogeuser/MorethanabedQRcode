@@ -1,0 +1,79 @@
+:root{color-scheme:light;--background:#2c413b;--panel:#3d5b53;--ink:#3d574f;--white:#fff;--mint:#639e8d}
+*{box-sizing:border-box}
+body{margin:0;background:var(--background);color:var(--white);font-family:"Link Sans",Arial,Helvetica,sans-serif;font-size:16px;-webkit-font-smoothing:antialiased}
+button,input,a{-webkit-tap-highlight-color:transparent}
+button,input{font:inherit}
+button,a{touch-action:manipulation}
+a{color:inherit;text-decoration:none}
+button{cursor:pointer}
+button:disabled{cursor:wait}
+button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #a4d9c5;outline-offset:5px}
+svg{width:24px;height:24px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;display:block}
+.svg-definitions{position:absolute;width:0;height:0;overflow:hidden}
+.profile{position:relative;width:calc(100% - 72px);max-width:580px;min-height:calc(100vh - 40px);margin:40px auto 0;background:var(--panel);border-radius:24px 24px 0 0;overflow:hidden}
+.profile-header{text-align:center}
+.cover{height:186px;position:relative}
+.cover-photo{width:100%;height:100%;object-fit:cover;object-position:center 48%;display:block}
+.cover:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05),transparent 80%);pointer-events:none}
+.topbar{position:absolute;z-index:1;top:28px;left:28px;right:28px;display:flex;justify-content:space-between;align-items:center}
+.topbar-right{display:flex;gap:8px}
+.icon-button{border:0;width:40px;height:40px;display:inline-flex;align-items:center;justify-content:center;border-radius:14px;color:inherit;background:none;flex-shrink:0}
+.glass{background:rgba(44,46,41,.42);color:white;backdrop-filter:blur(12px);transition:background .18s}
+.glass:hover{background:rgba(44,46,41,.65)}
+.message-button{border:0;border-radius:16px;padding:0 16px;min-height:40px;font-size:14px;font-weight:600}
+.avatar{position:relative;display:block;margin:-48px auto 0;z-index:1;width:96px;height:96px;object-fit:cover;border-radius:50%;border:1px solid rgba(255,255,255,.35)}
+.intro{padding:14px 24px 32px}
+h1{font-size:25px;line-height:32px;letter-spacing:-.6px;margin:0 0 4px;font-weight:700}
+.intro p{font-size:16px;line-height:24px;margin:0;font-weight:500}
+.followers{display:inline-block;margin-top:8px;padding:5px 8px;border-radius:8px;background:rgba(0,0,0,.13);font-size:12px;line-height:16px;color:#f0f3f1}
+.followers:hover{background:rgba(0,0,0,.23)}
+.links{display:grid;gap:14px;padding:0 28px}
+.link-card{position:relative;background:var(--white);color:var(--ink);border-radius:32px;transition:transform .18s,box-shadow .18s}
+.link-card:hover{transform:translateY(-2px);box-shadow:0 5px 16px #152d3420}
+.card-link{min-height:64px;display:flex;align-items:center;justify-content:center;padding:14px 52px;text-align:center;font-weight:500;font-size:16px;line-height:22px;border-radius:inherit}
+.card-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);width:30px;height:30px;display:block;background:var(--ink);mask:var(--icon) center/contain no-repeat;-webkit-mask:var(--icon) center/contain no-repeat}
+.share-card{position:absolute;right:8px;top:50%;transform:translateY(-50%);width:36px;height:44px;border:0;border-radius:20px;background:transparent;color:#8a9690;display:flex;align-items:center;justify-content:center}
+.share-card svg{width:12px;height:16px;stroke-width:1.4}
+.share-card:hover{background:#edf2ee;color:var(--ink)}
+.feature-card{border-radius:28px;overflow:hidden}
+.feature-link{display:flex;flex-direction:column;text-align:center;align-items:center;min-width:0}
+.instagram-card{padding-top:26px;padding-bottom:14px}
+.post-stack{position:relative;width:294px;max-width:85%;height:268px;margin:0 auto 12px}
+.post{position:absolute;object-fit:cover;width:162px;height:216px;top:30px;border-radius:16px;box-shadow:0 5px 12px #182b2720}
+.post-left{left:8px;transform:rotate(-7deg)}
+.post-right{right:8px;transform:rotate(7deg)}
+.post-front{width:162px;height:244px;top:0;left:50%;transform:translateX(-50%);z-index:1}
+.feature-title{font-size:16px;line-height:23px;font-weight:500}
+.instagram-meta{font-size:12px;color:#7a8881;line-height:18px}
+.follow-pill{font-size:12px;background:#e7e9e7;border-radius:16px;line-height:20px;padding:3px 12px;margin-top:8px}
+.instagram-card .share-card{top:auto;bottom:28px;transform:none}
+.booking-preview{width:100%;height:auto;aspect-ratio:1.8;object-fit:cover;object-position:top;display:block}
+.booking-card .feature-title{padding:18px 48px 22px;width:100%}
+.booking-card .share-card{top:auto;bottom:12px;transform:none}
+.social-links{display:flex;align-items:center;justify-content:center;gap:18px;padding-top:32px}
+.social-links a{display:flex;align-items:center;justify-content:center;min-width:32px;min-height:40px;transition:transform .18s}
+.social-links svg{width:28px;height:28px}
+.social-links a:hover{transform:scale(1.1)}
+footer{text-align:center;padding:106px 16px 64px;font-size:12px;line-height:18px}
+footer button{border:0;background:none;padding:0;color:inherit;font:inherit}
+footer a:hover,footer button:hover{text-decoration:underline}
+dialog{color:#263e35;border:0;border-radius:24px;width:min(420px,calc(100% - 32px));padding:40px 28px 28px;text-align:center;box-shadow:0 24px 100px #0003;max-height:90dvh;overflow:auto}
+dialog::backdrop{background:rgba(12,29,23,.65);backdrop-filter:blur(5px)}
+dialog .close-dialog.icon-button{position:absolute;top:10px;right:10px;background:#f1f4f2;border-radius:50%;width:32px;height:32px}
+dialog h2{font-size:22px;line-height:28px;margin:16px 0 8px;letter-spacing:-.5px}
+dialog p{font-size:14px;line-height:22px;color:#65736b;margin:0 0 20px}
+.dialog-avatar{border-radius:50%;display:block;margin:0 auto}
+#share-url{width:100%;min-width:0;display:block;padding:14px;border:1px solid #dce4df;border-radius:12px;background:#f5f7f5;color:#54685b;font-size:13px;margin:20px 0 12px}
+.primary-button,.secondary-button{display:block;text-align:center;width:100%;padding:14px 16px;border:0;border-radius:14px;font-size:14px;font-weight:600;line-height:22px}
+.primary-button{background:var(--panel);color:#fff}
+.primary-button:hover{background:#2c4b40}
+.secondary-button{margin-top:10px;color:var(--ink);background:#ecf2ee}
+.secondary-button:hover{background:#dce8e0}
+[hidden]{display:none!important}
+dialog .copy-status{font-size:12px;margin:12px 0 0;min-height:18px}
+body:has(dialog[open]){overflow:hidden}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:900px){.profile{box-shadow:0 20px 90px #14261f20}}
+@media(max-width:540px){body{background:var(--panel)}.profile{width:100%;margin:0;min-height:100vh;border-radius:0}.cover{height:190px}.topbar{top:20px;left:20px;right:20px}.intro{padding-bottom:30px}.links{padding:0 20px}.card-link{font-size:15px;padding-left:48px;padding-right:44px}.card-icon{left:14px;width:28px;height:28px}.instagram-card{padding-top:24px}.post-stack{height:252px;width:278px}.post{width:150px;height:200px}.post-front{width:154px;height:232px}.booking-preview{aspect-ratio:1.8}footer{padding-top:88px;padding-bottom:48px}}
+@media(max-width:359px){.links{padding:0 14px}.intro p{font-size:14px}.card-link{font-size:13px}.post-stack{width:248px}.post{width:140px}.post-front{width:148px}.feature-title{font-size:15px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}

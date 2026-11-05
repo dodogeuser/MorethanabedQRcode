@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#3d5b53">
+  <meta name="description" content="Welcome home! Furnished stays and cozy guesthouses in Lebanon and Greece. Check in, find support, or plan your next stay with More Than A Bed.">
+  <title>More Than A Bed | Welcome home</title>
+  <link rel="icon" href="assets/logo.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <symbol id="icon-share" viewBox="0 0 24 24"><path d="M12 15V3m-4 4 4-4 4 4M7 10H5a1 1 0 0 0-1 1v9h16v-9a1 1 0 0 0-1-1h-2"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/></symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18M5 7h14M5 17h14"/></symbol>
+    <symbol id="icon-dots" viewBox="0 0 24 24"><circle cx="12" cy="5" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="12" cy="19" r="1"/></symbol>
+    <symbol id="icon-tree" viewBox="0 0 24 24"><path d="m12 2 0 12m-6-9 12 12M18 5 6 17M3 10h18M12 17v5"/></symbol>
+    <symbol id="icon-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"/></symbol>
+  </svg>
+
+  <main class="profile">
+    <header class="profile-header">
+      <div class="cover">
+        <img class="cover-photo" src="assets/hero.webp" alt="A bright, welcoming bedroom opening onto a sunny balcony" fetchpriority="high">
+        <nav class="topbar" aria-label="Profile actions">
+          <a class="glass icon-button" href="https://linktr.ee/morethanabedbeirut" target="_blank" rel="noopener noreferrer" aria-label="View original Linktree"><svg><use href="#icon-tree"/></svg></a>
+          <div class="topbar-right">
+            <button class="glass message-button" type="button" data-dialog="contact-dialog">Message</button>
+            <button class="glass icon-button" type="button" data-share-profile aria-label="Share profile"><svg><use href="#icon-share"/></svg></button>
+          </div>
+        </nav>
+      </div>
+      <img class="avatar" src="assets/logo.webp" alt="More Than A Bed logo" width="96" height="96">
+      <div class="intro">
+        <h1>More Than A Bed</h1>
+        <p>Welcome home! 🏡 Furnished stays &amp;<br class="desktop-break"> cozy guesthouses in Lebanon &amp; Greece!</p>
+        <a class="followers" href="https://www.instagram.com/morethanabedbeirut" target="_blank" rel="noopener noreferrer">12.9K followers</a>
+      </div>
+    </header>
+
+    <section class="links" aria-label="More Than A Bed links">
+      <article class="link-card" id="stay-guide">
+        <a class="card-link" href="https://guide.morethanabed.me/" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/check-in.svg')" aria-hidden="true"></span><span>Check-in &amp; Stay Information</span></a>
+        <button class="share-card" type="button" aria-label="Share Check-in & Stay Information"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card" id="support">
+        <a class="card-link" data-whatsapp="support" href="https://wa.me/96181002889" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/bed.svg')" aria-hidden="true"></span><span>In-House Support | 24/7</span></a>
+        <button class="share-card" type="button" aria-label="Share In-House Support"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card feature-card instagram-card" id="instagram">
+        <a class="feature-link" href="https://www.instagram.com/morethanabedbeirut" target="_blank" rel="noopener noreferrer">
+          <div class="post-stack" aria-hidden="true">
+            <img class="post post-left" src="assets/instagram-byblos.jpg" alt="" width="162" height="216">
+            <img class="post post-right" src="assets/instagram-athens.jpg" alt="" width="162" height="216">
+            <img class="post post-front" src="assets/instagram-beirut.jpg" alt="" width="162" height="244">
+          </div>
+          <span class="feature-title">Follow Us on Instagram</span>
+          <span class="instagram-meta">@morethanabedbeirut · 12.9K followers</span>
+          <span class="follow-pill">Follow on Instagram</span>
+        </a>
+        <button class="share-card" type="button" aria-label="Share Instagram"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card" id="apartments">
+        <a class="card-link" data-whatsapp="apartments" href="https://wa.me/96171333768" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/home.svg')" aria-hidden="true"></span><span>Apartments | Short Stays</span></a>
+        <button class="share-card" type="button" aria-label="Share Apartments Short Stays"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card" id="guesthouses">
+        <a class="card-link" data-whatsapp="guesthouses" href="https://wa.me/9613576426" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/sofa.svg')" aria-hidden="true"></span><span>Guesthouses | Nightly Stays</span></a>
+        <button class="share-card" type="button" aria-label="Share Guesthouses Nightly Stays"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card" id="long-term">
+        <a class="card-link" data-whatsapp="longTerm" href="https://wa.me/96171333768" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/calendar.svg')" aria-hidden="true"></span><span>Monthly &amp; Long-Term Rentals</span></a>
+        <button class="share-card" type="button" aria-label="Share Monthly and Long-Term Rentals"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card feature-card booking-card" id="book-direct">
+        <a class="feature-link" href="https://morethanabed.me/" target="_blank" rel="noopener noreferrer">
+          <img class="booking-preview" src="assets/booking-preview.webp" alt="More Than A Bed booking website, featuring destinations in Lebanon and Athens" width="536" height="300" loading="lazy">
+          <span class="feature-title">Explore &amp; Book Direct</span>
+        </a>
+        <button class="share-card" type="button" aria-label="Share Explore and Book Direct"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+      <article class="link-card" id="partnerships">
+        <a class="card-link" data-whatsapp="owners" href="https://wa.me/96171333768" target="_blank" rel="noopener noreferrer"><span class="card-icon" style="--icon: url('assets/briefcase.svg')" aria-hidden="true"></span><span>Property Owners &amp; Partnerships</span></a>
+        <button class="share-card" type="button" aria-label="Share Property Owners and Partnerships"><svg><use href="#icon-dots"/></svg></button>
+      </article>
+    </section>
+
+    <nav class="social-links" aria-label="Social links">
+      <a href="https://www.instagram.com/morethanabedbeirut" target="_blank" rel="noopener noreferrer" aria-label="More Than A Bed Instagram"><svg><use href="#icon-instagram"/></svg></a>
+      <a href="https://morethanabed.me/" target="_blank" rel="noopener noreferrer" aria-label="More Than A Bed Website"><svg><use href="#icon-globe"/></svg></a>
+    </nav>
+    <footer>
+      <div><button type="button" data-dialog="cookies-dialog">Cookie Preferences</button><span aria-hidden="true"> · </span><a href="https://linktr.ee/s/about/trust-center/report/?field86145911=https%3A%2F%2Flinktr.ee%2Fmorethanabedbeirut" target="_blank" rel="noopener noreferrer">Report</a><span aria-hidden="true"> · </span><button type="button" data-dialog="privacy-dialog">Privacy</button></div>
+      <div><button type="button" data-dialog="about-dialog">About this account</button><span aria-hidden="true"> · </span><a href="https://linktr.ee/" target="_blank" rel="noopener noreferrer">More from Linktree</a></div>
+    </footer>
+  </main>
+
+  <dialog id="share-dialog" aria-labelledby="share-title">
+    <button class="close-dialog icon-button" aria-label="Close share dialog"><svg><use href="#icon-close"/></svg></button>
+    <img class="dialog-avatar" src="assets/logo.webp" alt="" width="64" height="64">
+    <h2 id="share-title">Share More Than A Bed</h2>
+    <p id="share-description">A little more than a place to stay.</p>
+    <label class="sr-only" for="share-url">Link to share</label>
+    <input id="share-url" type="text" readonly>
+    <button id="copy-link" class="primary-button" type="button">Copy link</button>
+    <button id="native-share" class="secondary-button" type="button" hidden>More sharing options</button>
+    <p class="copy-status" role="status" aria-live="polite"></p>
+  </dialog>
+  <dialog id="contact-dialog" aria-labelledby="contact-title">
+    <button class="close-dialog icon-button" aria-label="Close contact dialog"><svg><use href="#icon-close"/></svg></button>
+    <img class="dialog-avatar" src="assets/logo.webp" alt="" width="64" height="64">
+    <h2 id="contact-title">Welcome home!</h2><p>How can we help you?</p>
+    <a class="primary-button" data-whatsapp="support" href="https://wa.me/96181002889" target="_blank" rel="noopener noreferrer">Guest support · 24/7</a>
+    <a class="secondary-button" data-whatsapp="apartments" href="https://wa.me/96171333768" target="_blank" rel="noopener noreferrer">Reservations &amp; inquiries</a>
+  </dialog>
+  <dialog id="cookies-dialog" aria-labelledby="cookies-title">
+    <button class="close-dialog icon-button" aria-label="Close cookie preferences"><svg><use href="#icon-close"/></svg></button>
+    <h2 id="cookies-title">Cookie preferences</h2><p>This page does not set cookies or use analytics. No preferences need to be saved.</p><p>External websites have their own cookie policies.</p>
+    <button class="primary-button close-dialog" type="button">Done</button>
+  </dialog>
+  <dialog id="privacy-dialog" aria-labelledby="privacy-title">
+    <button class="close-dialog icon-button" aria-label="Close privacy information"><svg><use href="#icon-close"/></svg></button>
+    <h2 id="privacy-title">Your privacy</h2><p>This static page does not collect, store, or send personal information. Images and icons are served locally.</p><p>When you open WhatsApp, Instagram, the guest guide, or the booking website, that service’s privacy policy applies.</p>
+  </dialog>
+  <dialog id="about-dialog" aria-labelledby="about-title">
+    <button class="close-dialog icon-button" aria-label="Close account information"><svg><use href="#icon-close"/></svg></button>
+    <img class="dialog-avatar" src="assets/logo.webp" alt="" width="64" height="64">
+    <h2 id="about-title">More Than A Bed</h2><p>Furnished stays &amp; cozy guesthouses in Lebanon &amp; Greece.</p><p>This is a static recreation of the More Than A Bed Linktree profile. Follower counts and preview images reflect the reference at the time it was built.</p>
+    <a class="primary-button" href="https://morethanabed.me/" target="_blank" rel="noopener noreferrer">Visit our website</a>
+  </dialog>
+</body>
+</html>
