@@ -1,4 +1,4 @@
-/* All interactions run in the browser. No APIs, tracking, or stored visitor data. */
+/* Profile interactions. Optional analytics is configured separately in analytics-config.js. */
 'use strict';
 
 const whatsapp = {

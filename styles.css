@@ -77,3 +77,12 @@ body:has(dialog[open]){overflow:hidden}
 @media(max-width:540px){body{background:var(--panel)}.profile{width:100%;margin:0;min-height:100vh;border-radius:0}.cover{height:190px}.topbar{top:20px;left:20px;right:20px}.intro{padding-bottom:30px}.links{padding:0 20px}.card-link{font-size:15px;padding-left:48px;padding-right:44px}.card-icon{left:14px;width:28px;height:28px}.instagram-card{padding-top:24px}.post-stack{height:252px;width:278px}.post{width:150px;height:200px}.post-front{width:154px;height:232px}.booking-preview{aspect-ratio:1.8}footer{padding-top:88px;padding-bottom:48px}}
 @media(max-width:359px){.links{padding:0 14px}.intro p{font-size:14px}.card-link{font-size:13px}.post-stack{width:248px}.post{width:140px}.post-front{width:148px}.feature-title{font-size:15px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;scroll-behavior:auto!important}}
+
+/* Optional analytics consent; only displayed when a collector is configured. */
+#analytics-consent { position: fixed; bottom: 18px; left: 50%; transform: translateX(-50%); z-index: 100; width: min(520px, calc(100% - 28px)); padding: 18px; background: #fff; color: #28433b; border: 1px solid #d6e0d9; border-radius: 15px; box-shadow: 0 8px 40px #182c3433; font-size: 13px; }
+#analytics-consent[hidden] { display: none; }
+#analytics-consent p { margin: 0 0 12px; line-height: 1.5; }
+#analytics-consent > div { display: flex; gap: 10px; justify-content: flex-end; }
+#analytics-consent button { padding: 9px 13px; border: 1px solid #cbd8cf; border-radius: 8px; background: #fff; color: #28433b; cursor: pointer; }
+#analytics-consent button[data-consent="granted"] { background: #3d5b53; color: #fff; }
+#cookies-dialog [data-consent] { margin-bottom: 10px; }

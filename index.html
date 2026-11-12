@@ -9,6 +9,8 @@
   <link rel="icon" href="assets/logo.webp">
   <link rel="stylesheet" href="styles.css">
   <script src="app.js" defer></script>
+  <script src="analytics-config.js" defer></script>
+  <script src="analytics.js" defer></script>
 </head>
 <body>
   <svg class="svg-definitions" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -117,12 +119,15 @@
   </dialog>
   <dialog id="cookies-dialog" aria-labelledby="cookies-title">
     <button class="close-dialog icon-button" aria-label="Close cookie preferences"><svg><use href="#icon-close"/></svg></button>
-    <h2 id="cookies-title">Cookie preferences</h2><p>This page does not set cookies or use analytics. No preferences need to be saved.</p><p>External websites have their own cookie policies.</p>
+    <h2 id="cookies-title">Cookie preferences</h2><p>This page does not set cookies. Optional analytics, when configured, uses browser storage only after you allow it. You can change your choice here.</p><p>External websites have their own cookie policies.</p>
+    <p id="analytics-status">Analytics is currently unconfigured; no analytics events are sent.</p>
+    <button class="primary-button" type="button" data-consent="granted">Allow analytics</button>
+    <button class="secondary-button" type="button" data-consent="denied">Decline analytics</button>
     <button class="primary-button close-dialog" type="button">Done</button>
   </dialog>
   <dialog id="privacy-dialog" aria-labelledby="privacy-title">
     <button class="close-dialog icon-button" aria-label="Close privacy information"><svg><use href="#icon-close"/></svg></button>
-    <h2 id="privacy-title">Your privacy</h2><p>This static page does not collect, store, or send personal information. Images and icons are served locally.</p><p>When you open WhatsApp, Instagram, the guest guide, or the booking website, that service’s privacy policy applies.</p>
+    <h2 id="privacy-title">Your privacy</h2><p>Images and icons are served locally. If optional analytics is configured and you allow it, this page sends page paths, referring page paths, campaign source, link and button labels, device category, a random session ID, visit duration, and scroll depth to our analytics server. URL query strings and fragments are excluded from recorded page and link destinations. Your choice is saved in this browser; you can withdraw it under Cookie preferences. Previously collected events are not deleted by withdrawing consent.</p><p>When you open WhatsApp, Instagram, the guest guide, or the booking website, that service’s privacy policy applies.</p>
   </dialog>
   <dialog id="about-dialog" aria-labelledby="about-title">
     <button class="close-dialog icon-button" aria-label="Close account information"><svg><use href="#icon-close"/></svg></button>
